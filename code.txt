@@ -1,0 +1,9 @@
+[asy]
+import three;
+void cube(int p1, int p2, int p3){
+currentprojection=perspective(p1,p1,p3);
+draw(unitcube,palegrey);
+}
+draw(circle((0,0),5));
+cube(5, 5, 5);
+[/asy]
